@@ -34,6 +34,8 @@
         }
       }
     </script>
+    <!-- Script Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Diseño Web Todo Incluido - Desde 299€ - Hiddal Studios</title>
   </head>
   <body class=" dark:bg-gray-900" > 
@@ -243,7 +245,12 @@
                   </div>
                   <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Estoy de acuerdo con los <a href="#" class="text-teal-500  hover:underline dark:text-teal-400">términos y condiciones.</a>.</label>
               </div>
-              <button type="submit" class="text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-teal-400 dark:hover:bg-teal-600 dark:focus:ring-teal-800">Enviar</button>
+              <button type="submit" class="g-recaptcha text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-teal-400 dark:hover:bg-teal-600 dark:focus:ring-teal-800"
+                data-sitekey="6LeJ5P4kAAAAAIPO8pOMuAn3KY78AsBkpMpO8llu" 
+                data-callback='onSubmit' 
+                data-action='submit'>
+                Enviar
+              </button>
             </form>
   
           </div>
@@ -372,6 +379,14 @@
           
       });
     </script>
+
+    <!-- Script Recpatcha  -->
+    <script>
+      function onSubmit(token) {
+        document.getElementById("form-contact-recaptcha").submit();
+      }
+    </script>
+
 
     <!-- Scripts Sections FQA -->
     <script src="main.jsx" >
