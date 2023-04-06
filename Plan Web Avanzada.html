@@ -38,943 +38,349 @@
   </head>
   <body class=" dark:bg-gray-900" > 
     <!-- Section Navbar responsive dark mode -->
-    <nav class="relative bg-transparent z-50 w-full flex-none pt-4  px-2 md:px-4 py-2.5 dark:bg-gray-900">
-      <div class=" flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
-        <!-- Logo Hiddal -->
-          <a href="https://studio.hiddal.es" class="flex ml-4 lg:ml-0 items-center">
-            <img src="src/assets/png/hiddal/v1.0.png" class="h-8 mr-3 sm:h-7" alt="Hiddal Logo" /> 
+     <nav class="relative bg-transparent z-50 w-full flex-none pt-4  px-2 md:px-4 py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
+          <!-- Logo Hiddal -->
+          <a href="https://studio.hiddal.es" class="flex ml-4 items-center">
+            <img src="assets/png/hiddal/v1.0.png" class="h-8 mr-3 sm:h-7" alt="Hiddal Logo" /> 
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Hiddal</span>
           </a>
-          <!-- Container button dark mode, button comenzar, menu burger responsive -->
-          <div class="flex items-center md:order-2">
-              <div class="pr-4">
-                <button id="theme-toggle" type="button" class=" text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                  <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                  <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            <!-- Container button dark mode, button comenzar, menu burger responsive -->
+            <div class="flex items-center md:order-2">
+                <div class="pr-4">
+                  <button id="theme-toggle" type="button" class=" text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </button>
+                </div>
+                <a href="precios.html" class="text-white bg-teal-300 hover:bg-teal-600 focus:ring-2 focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-teal-300 dark:hover:bg-teal-500 focus:outline-none dark:focus:ring-teal-50">COMENZAR</a>
+                <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                 </button>
-              </div>
-              <a href="precios.html" class="text-white bg-teal-300 hover:bg-teal-600 focus:ring-2 focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-teal-300 dark:hover:bg-teal-500 focus:outline-none dark:focus:ring-teal-50">COMENZAR</a>
-              <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
-                  <span class="sr-only">Open main menu</span>
-                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-              </button>
-          </div>
-          <!-- Container menu dropdown -->
-          <div id="mega-menu" class="items-center justify-between hidden w-full text-sm md:flex md:w-auto md:order-1">
-              <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
-                <li>
-                  <a href="index.html" class="block py-2 pl-3 pr-4 text-teal-300 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0  dark:focus:text-white dark:text-teal-300 md:dark:hover:text-teal-300 dark:hover:bg-gray-700 dark:hover:text-teal-50 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
-              </li>
-                  <!-- Menu dropdown company  -->
-                  <li>
-                    <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-800 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-300 md:p-0  dark:focus:text-white dark:text-gray-400 md:dark:hover:text-teal-300 dark:hover:bg-gray-700 dark:hover:text-teal-300 md:dark:hover:bg-transparent dark:border-gray-700">
-                        Compañia <svg aria-hidden="true" class="w-5 h-5 ml-1 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                    <div id="mega-menu-dropdown" class="absolute z-10 grid hidden  w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-sm shadow-md dark:border-gray-700 md:grid-cols-2 dark:bg-gray-900">
-                        
-                      <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
-                          <ul class="space-y-4">
-                              <li>
-                                  <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
-                                      Blog
+            </div>
+            <!-- Container menu dropdown -->
+            <div id="mega-menu" class="items-center justify-between hidden w-full text-sm md:flex md:w-auto md:order-1">
+                <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                    <li>
+                        <a href="index.html" class="block py-2 pl-3 pr-4 text-teal-300 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0  dark:focus:text-white dark:text-teal-300 md:dark:hover:text-teal-300 dark:hover:bg-gray-700 dark:hover:text-teal-50 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
+                    </li>
+                    <!-- Menu dropdown company  -->
+                    <li>
+                        <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-800 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-300 md:p-0  dark:focus:text-white dark:text-gray-400 md:dark:hover:text-teal-300 dark:hover:bg-gray-700 dark:hover:text-teal-300 md:dark:hover:bg-transparent dark:border-gray-700">
+                            Compañia <svg aria-hidden="true" class="w-5 h-5 ml-1 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div id="mega-menu-dropdown" class="absolute z-10 grid hidden  w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-sm shadow-md dark:border-gray-700 md:grid-cols-2 dark:bg-gray-900">
+                          
+                          <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                              <ul class="space-y-4">
+                                  <li>
+                                      <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
+                                          Blog
+                                      </a>
+                                  </li>
+                                  <li>
+                                    <a href="recursos.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
+                                    Recursos
+                                    </a>
+                                </li>
+                                  <li>
+                                      <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
+                                          Portafolio
+                                      </a>
+                                  </li>
+                                  
+                                  
+                              </ul>
+                          </div>
+                          <div class="p-4 text-gray-900 dark:text-white">
+                            <ul class="space-y-4">
+                                
+                                  
+                                <li>
+                                  <a href="aviso legal.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
+                                    Aviso Legal
                                   </a>
                               </li>
                               <li>
-                                <a href="recursos.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
-                                Recursos
+                                <a href="sobre nosotros.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
+                                    Sobre Nosotros
                                 </a>
                             </li>
                               <li>
-                                  <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
-                                      Portafolio
-                                  </a>
-                              </li>
-                              
-                              
-                          </ul>
+                                <a href="Política de Privacidad.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
+                                    Política de Privacidad
+                                </a>
+                            </li>
+                                
+                            </ul>
+                        </div>
                       </div>
-                      <div class="p-4 text-gray-900 dark:text-white">
-                        <ul class="space-y-4">
-                            
-                              
-                            <li>
-                              <a href="aviso legal.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
-                                Aviso Legal
-                              </a>
-                          </li>
-                          <li>
-                            <a href="sobre nosotros.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
-                                Sobre Nosotros
-                            </a>
-                        </li>
-                          <li>
-                            <a href="Política de Privacidad.html" class="text-gray-500 dark:text-gray-400 hover:text-teal-300  dark:hover:text-teal-50">
-                                Política de Privacidad
-                            </a>
-                        </li>
-                            
-                        </ul>
-                    </div>
-                  </div>
-                </li>
-                  <!-- Menu dropdown services -->
-                  <li>
+                    </li>
                     <button id="dropdownNavbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-300 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-teal-50 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Servicios <svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                     <!-- Dropdown menu -->
                     <div id="dropdownNavbar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-44 dark:bg-gray-900 dark:divide-gray-600">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownNavbarButton">
-                          <li class="">
-                            <a href="Plan Web Estándar.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
-                              Plan Web Estándar
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownNavbarButton">
+                        <li class="">
+                          <a href="Plan Web Estándar.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
+                            Plan Web Estándar
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="Plan Web Avanzada.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
+                            Plan Web Avanzado
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="Plan Web Profesional.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
+                            Plan Web Profesional
+                          </a>
+                        </li>
+                        <li class="">
+                            <a href="Plan Web Ecommerce.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
+                              Plan Web Ecommerce
                             </a>
                           </li>
-                          <li class="">
-                            <a href="Plan Web Avanzada.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
-                              Plan Web Avanzado
-                            </a>
-                          </li>
-                          <li class="">
-                            <a href="Plan Web Profesional.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
-                              Plan Web Profesional
-                            </a>
-                          </li>
-                          <li class="">
-                              <a href="Plan Web Ecommerce.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
-                                Plan Web Ecommerce
-                              </a>
-                            </li>
-                          <li class="">
-                            <a href="Mantenimiento web.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
-                              Plan Mantenimiento 
-                            </a>
-                          </li>
-                          
-                          
-                         
-                        </ul>
+                        <li class="">
+                          <a href="Mantenimiento web.html" class=" block px-4 py-2 text-gray-500 dark:text-gray-400 hover:text-teal-300 dark:hover:text-teal-50">
+                            Plan Mantenimiento 
+                          </a>
+                        </li>
+                      
                         
-                      </div>
-                  </li>
-                  <li>
-                    <a href="Contáctenos.html" class="block py-2 pl-3 pr-4 text-gray-700 hover:text-teal-50 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-50 dark:hover:bg-gray-700 dark:hover:text-teal-50 md:dark:hover:bg-transparent dark:border-gray-700">Contáctenos</a>
-                </li>
-                  <li>
-                      <a href="precios.html" class="block py-2 pl-3 pr-4 text-gray-700  hover:text-teal-50 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-50 dark:hover:bg-gray-700 dark:hover:text-teal-50 md:dark:hover:bg-transparent dark:border-gray-700">Precios</a>
-                  </li>
-              </ul>
-          
-        </div>
-      </nav>
-    
-    <!-- Section CTA principal responsive dark mode -->
-    <div class="grid   lg:mb-60 grid-cols-2 pt-4">
-      <!-- How can I make this col sticky? -->
-      <div class="grid  lg:grid-cols-2 gap-4 mx-auto col-span-2 w-full px-4">
-          <div class=" lg:grid-cols-1 relative mx-auto lg:ml-40  grid w-full max-w-container  px-4  sm:px-6 lg:px-8 lg:mt-8">
-            <!-- Breadcrumb -->
-            <div class=" w-full  max-w-container mb-8 grid grid-cols-1 relative mx-auto ">
-              <nav class="flex justify-start" aria-label="Breadcrumb">
-                <ol class="inline-flex  items-center space-x-1 md:space-x-3">
-                  <li class="inline-flex items-center">
-                    <a href="#" class="inline-flex items-center text-sm font-medium text-teal-400 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-700">
-                    
-                      Inicio
-                    </a>
-                  </li>
-                  <li>
-                    <div class="flex items-center">
-                      <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                      <a href="#description" class="ml-1 text-sm font-medium text-gray-700 hover:text-teal-600 md:ml-2 dark:text-gray-400 dark:hover:text-teal-400">
-                        Descripción</a>
+                       
+                      </ul>
+                      
                     </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center">
-                      <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                      <a href="#vendedor" class="ml-1 text-sm font-medium text-gray-700 hover:text-teal-600 md:ml-2 dark:text-gray-400 dark:hover:text-teal-400">
-                        Vendedor</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center">
-                      <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                      <a href="#reseñas" class="ml-1 text-sm font-medium text-gray-700 hover:text-teal-600 md:ml-2 dark:text-gray-400 dark:hover:text-teal-400">
-                        Reseñas</a>
-                    </div>
-                  </li>
-                </ol>
-              </nav>
-              <hr class="h-px lg:my-8 my-2 bg-gray-200 border-0 dark:bg-gray-700">
-            </div>
-
-            <h5 class="mb-4 text-xl font-medium text-slate-900 dark:text-gray-400">Plan Web <span class="text-teal-400"> Avanzado</span></h5>
-            <div id="default-carousel" class="relative" data-carousel="slide">
-              <!-- Carousel wrapper -->
-              <div class="relative h-36 overflow-hidden rounded-sm md:h-96">
-                  <!-- Item 1 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="src/assets/jpg/Webs/pro 4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <!-- Item 2 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="src/assets/jpg/Webs/pro 5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <!-- Item 3 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="src/assets/jpg/Webs/pro 3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <!-- Item 4 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="src/assets/jpg/Webs/pro 2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <!-- Item 5 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="src/assets/jpg/Webs/pro 1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              <!-- Slider indicators -->
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-              </div>
-              <!-- Slider controls -->
-              <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-            </div>
-            <!-- Section description -->
-            <div id="description" class="mt-8 items-center lg:justify-start">
-              <span class=" text-center lg:text-left mt-4 mb-4  text-xl font-medium   text-slate-900 dark:text-white text-left" >
-                Acerca de este  servicio
-              </span>
-              <p class=" mt-4   font-normal  text-lef  text-1xl leading-6 text-gray-800 dark:text-gray-400" >
-                Uno de los principales motivos por los que cualquier empresa debería trabajar su ámbito de actuación en el mundo online es, sin duda, debido a que Internet puede funcionar como un auténtico motor que impulse el negocio. <br>
-              </p>
-              <p class="mt-4 mb-8   font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400" >
-                Los negocios digitales, además de brindar un medio excelente para conseguir aumentar las ventas, suponen también un acercamiento de la empresa al público, con su consiguiente mejora de la proyección corporativa y el aumento de la reputación. <br>
-                <br>
-                Todo esto, se acaba convirtiendo en un mayor número de ventas, con clientes más fidelizados y con mejores ratios de beneficios.
-                <br>
-                Posicionamiento online: cómo vender por Internet.
-              </p>
-              <span class=" text-center lg:text-left mt-2 mb-8  text-xl font-medium   text-slate-900 dark:text-white text-left">¿Qué proporciona?</span>
-              <ul role="list" class="space-y-5 my-7 ">
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg aria-hidden="true" class=" flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400"> TODO LO ANTERIOR Y ADEMÁS
-                    </span>
-                </li>
-                <li class="flex space-x-3 ">
-                    <!-- Icon -->
-                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400"> +8 Subpaginas (Quienes somos, Servicios, Contacto...)
-                    </span>
-                </li>
-                <li class="flex space-x-3">
-                    <!-- Icon -->
-                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">  Integración Redes Sociales.
-                    </span>
-                </li>
-                <li class="flex space-x-3">
-                  <!-- Icon -->
-                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                  <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400"> Botón Flotante llamada, Whatsapp, Telegram, Messenger...
-            
-                  </span>
-                </li>
-                <li class="flex space-x-3">
-                  <!-- Icon -->
-                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                  <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">   Diseño de marca
-                  </span>
-                </li>
-                <li class="flex space-x-3">
-                  <!-- Icon -->
-                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                  <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">   Incluye hosting y dominio.
-                  </span>
-                </li>
-                <li class="flex space-x-3">
-                  <!-- Icon -->
-                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                  <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">    Email Corporativo
-  
-                  </span>
-                </li>
-                <li class="flex space-x-3 line-through decoration-gray-500">
-                  <!-- Icon -->
-                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                  <span class="text-base font-normal leading-tight text-gray-500"> Incluye creación de blog.
-                  </span>
-              </li>
-              <li class="flex space-x-3 line-through decoration-gray-500">
-                  <!-- Icon -->
-                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                  <span class="text-base font-normal leading-tight text-gray-500"> Alta Google Analitycs.
-                  </span>
-              </li>
-                
-            </ul>
-            <div class="flex flex-wrap mt-4">
-              <div class="flex items-center text-sm font-medium text-slate-500">
-              
-                <svg class="h-8 w-8 flex-none stroke-current text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"></path>
-                </svg>  
-                <span class="ml-2.5 text-center lg:text-left  text-slate-900 dark:text-white text-left">Hosting</span>
-              </div>
-              <p  class=" mt-4  lg:text-left font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">
-                Obtendrás alojamiento web y tu dominio de preferencia con los mejores proveedores del mercado estableciendo tu marca en línea.
-              </p>
-              <div class="mt-4 flex items-center text-sm font-medium text-slate-500 ">
-                <svg class="h-8 w-8 flex-none stroke-current text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 4.5v15a2.25 2.25 0 002.25 2.25z"></path>
-                </svg>
-                <span class="ml-2.5 text-center lg:text-left  text-slate-900 dark:text-white text-left">Responsive</span>
-              </div>
-              <p  class=" mt-4  lg:text-left font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">
-                Cada sitio web responde completamente y está cuidadosamente diseñado e implementado para verse bien en cualquier tamaño de pantalla.
-              </p>
-            </div>
-              
-              <div class="mt-4 flex items-center text-sm font-medium text-slate-500 ">
-                <svg class="h-8 w-8 flex-none stroke-current text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"></path>
-                </svg>
-                <span class="ml-2.5 text-center lg:text-left  text-slate-900 dark:text-white text-left">Optimización</span>
-              </div>
-              <p  class=" mt-4  lg:text-left font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">
-                Ponemos también a tu disposición servicios para llevar tu página web actual al siguiente nivel y mantenerla a la par del crecimiento de tu marca o negocio
-              </p>
-              
-            </div>
-            <div id="vendedor" class="mt-4 lg:mt-8 mb-4 items-center lg:justify-start">
-              <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
-              <article class=" mt-4">
-                <div class="mt-8 text-left lg:text-start">
-                  <h5 class=" mb-4 text-xl font-medium text-slate-900 dark:text-white">Sobre el  <span class="text-teal-400">Vendedor</span></h5>
-                </div>
-                <div class="flex justify-start lg:justify-start items-center mb-4 space-x-4">
-                    <img class="w-10 h-10 rounded-full" src="src/assets/png/Profile/me.png" alt="">
-                    <div class="space-y-1 font-medium dark:text-white">
-                        <p>Alexander Hidalgo <time datetime="2023-03-20 19:00" class="block text-sm text-gray-500 dark:text-gray-400">10/03/2023</time></p>
-                    </div>
-                </div>
-                <div class="flex lg:justify-start items-center mb-1">
-                    <svg aria-hidden="true" class="lg:justify-start w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    <svg aria-hidden="true" class="w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    <svg aria-hidden="true" class="w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    <svg aria-hidden="true" class="w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    <svg aria-hidden="true" class="w-5 h-5 text-gray-600 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    
-                </div>
-                <div class="mt-4  flex gap-4">
-                <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 text-white bg-teal-300 hover:bg-teal-600 focus:ring-2 focus:ring-teal-300" href="precios.html">
-                  <span>Contáctame 
-                  </span>
-                </a>
-              </div>
-              </article>
-            </div>
-            <div id="comparar" class="  mt-4 p-4 w-full bg-white border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 lg:justify-start ">
-              <div class=" grid  grid-cols-2">
-                <div>
-                  <ul >
-                    <li class="lg:text-left  text-slate-900 dark:text-white text-left">
-                      De:
+                    <li>
+                        <a href="Contáctenos.html" class="block py-2 pl-3 pr-4 text-gray-700 hover:text-teal-50 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-50 dark:hover:bg-gray-700 dark:hover:text-teal-50 md:dark:hover:bg-transparent dark:border-gray-700">Contáctenos</a>
                     </li>
-                    <li class="text-base font-normal text-1xl leading-6 text-gray-600 dark:text-gray-400">
-                      España
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul>
-                    <li class="lg:text-left  text-slate-900 dark:text-white text-left">
-                      Miembro desde
-                    </li>
-                    <li class="text-base font-normal text-1xl leading-6 text-gray-600 dark:text-gray-400">
-                      Enero 2023
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-              <div class="mt-4 grid grid-cols-2">
-                <div>
-                  <ul>
-                    <li class="lg:text-left  text-slate-900 dark:text-white text-left">
-                      Tiempo de respuesta
-                    </li>
-                    <li class="text-base font-normal text-1xl leading-6 text-gray-600 dark:text-gray-400">
-                      1 hora Aprox
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul>
-                    <li class="lg:text-left  text-slate-900 dark:text-white text-left">
-                      última entrega
-                    </li>
-                    <li class="text-base font-normal text-1xl leading-6 text-gray-600 dark:text-gray-400">
-                      14 horas Aprox
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-              <div class="mt-8     font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">
-                <p>Hola, me llamo Alexander Hidalgo. Creador y director de Hiddal©, aprovecharé para comentar y presentar las intenciones de este proyecto. <br> El equipo Hiddal te ofrece diversas opciones para elaborar tu pagina web, con nuestros planes de desarrollo y mantenimiento obtendrás una base sólida para cualquier proyecto.</p>
-              </div>
-    
-            </div>
-            <hr class="h-px my-4 mt-16 bg-gray-200 border-0 dark:bg-gray-700">
-            <span id="reseñas" class="mt-8 text-center lg:text-left mt-4 text-start  text-xl font-medium   text-slate-900 dark:text-white text-left" >
-              Las <span class="text-teal-400">Reseñas</span>
-            </span>
-            <div class="mt-8 p-4 w-full bg-white border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 lg:justify-start">
-              <div class="flex items-center mt-4 mb-3">
-                <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                <p class="ml-2 text-sm font-medium text-gray-900 dark:text-white">0.00 fuera de 5</p>
-              </div>
-              <p class="text-sm font-medium text-gray-500 dark:text-gray-400">0,00 Calificaciones globales</p>
-              <div class="flex items-center mt-4">
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">5 Estrellas</span>
-                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                    <div class="h-5 bg-teal-400 rounded" style="width: 70%"></div>
-                </div>
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">70%</span>
-              </div>
-              <div class="flex items-center mt-4">
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">4 Estrellas</span>
-                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                    <div class="h-5 bg-teal-400 rounded" style="width: 17%"></div>
-                </div>
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">17%</span>
-              </div>
-              <div class="flex items-center mt-4">
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">3 Estrellas</span>
-                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                    <div class="h-5 bg-teal-400 rounded" style="width: 8%"></div>
-                </div>
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">8%</span>
-              </div>
-              <div class="flex items-center mt-4">
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">2 Estrellas</span>
-                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                    <div class="h-5 bg-teal-400 rounded" style="width: 4%"></div>
-                </div>
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">4%</span>
-              </div>
-              <div class="flex items-center mt-4">
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">1 Estrellas</span>
-                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-                    <div class="h-5 bg-teal-400 rounded" style="width: 1%"></div>
-                </div>
-                <span class="text-sm font-medium text-teal-600 dark:text-teal-500">1%</span>
-              </div>
-            </div>
-                        
-            <div id="indicators-carousel" class="relative lg:mt-20" data-carousel="slide">
-              <!-- Carousel wrapper -->
-              <div class="relative mb-8 lg:h-96 h-96 overflow-hidden rounded-sm md:h-96">
-                  <!-- Item 1 -->
-                  <div class="hidden justify-around items-center duration-700 ease-in-out" data-carousel-item="active">
-                      
-                    <article class="bg-white mt-20 justify-center border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 ">
-                        <div class="m-4 ">
-                          <div class="flex items-center mb-4 space-x-4">
-                            <img class="w-10 h-10 rounded-full" src="#" alt="">
-                            <div class="space-y-1 font-medium dark:text-white">
-                                <p>Stuart Escobar </p>
-                            </div>
-                        </div>
-                        <div class="flex items-center mb-1">
-                            <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <h3 class="ml-2 text-sm font-semibold text-gray-900 dark:text-white"></h3>
-                        </div>
-                        <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400"><p>Revisado en España el <time datetime="2023-03-13 19:00">Marzo 3, 2023</time></p></footer>
-                        <p class="mt-4 mb-8   font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">Esta es mi primer compra. Son simplemente una fantástica relación calidad-precio. Es su atención al cliente el asesoramiento es fantástico, totalmente recomendado.</p>
-                        
-                        </div>
-                    </article>
-
-                  </div>
-                  <!-- Item 2 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <article class="bg-white  mt-20 justify-center border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 ">
-                      <div class="m-4 ">
-                        <div class="flex items-center mb-4 space-x-4">
-                          <img class="w-10 h-10 rounded-full" src="#" alt="">
-                          <div class="space-y-1 font-medium dark:text-white">
-                              <p>Carlos Andres </p>
-                          </div>
-                      </div>
-                      <div class="flex items-center mb-1">
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <h3 class="ml-2 text-sm font-semibold text-gray-900 dark:text-white"></h3>
-                      </div>
-                      <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400"><p>Revisado en España el <time datetime="2023-03-13 19:00">Marzo 3, 2023</time></p></footer>
-                      <p class="mt-4 mb-8   font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">Esta es mi primer compra. Son simplemente una fantástica relación calidad-precio. Es su atención al cliente el asesoramiento es fantástico, totalmente recomendado.</p>
-                      
-                      </div>
-                  </article>
-                  </div>
-                  <!-- Item 3 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <article class="bg-white  mt-20 justify-center border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 ">
-                      <div class="m-4 ">
-                        <div class="flex items-center mb-4 space-x-4">
-                          <img class="w-10 h-10 rounded-full" src="#" alt="">
-                          <div class="space-y-1 font-medium dark:text-white">
-                              <p>Juan Carlos </p>
-                          </div>
-                      </div>
-                      <div class="flex items-center mb-1">
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <h3 class="ml-2 text-sm font-semibold text-gray-900 dark:text-white"></h3>
-                      </div>
-                      <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400"><p>Revisado en España el <time datetime="2023-03-13 19:00">Marzo 3, 2023</time></p></footer>
-                      <p class="mt-4 mb-8   font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">Esta es mi primer compra. Son simplemente una fantástica relación calidad-precio. Es su atención al cliente el asesoramiento es fantástico, totalmente recomendado.</p>
-                      
-                      </div>
-                  </article>
-                  </div>
-                  <!-- Item 4 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <article class="bg-white  mt-20 justify-center border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 ">
-                      <div class="m-4 ">
-                        <div class="flex items-center mb-4 space-x-4">
-                          <img class="w-10 h-10 rounded-full" src="#" alt="">
-                          <div class="space-y-1 font-medium dark:text-white">
-                              <p>Lorena Ortega </p>
-                          </div>
-                      </div>
-                      <div class="flex items-center mb-1">
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <h3 class="ml-2 text-sm font-semibold text-gray-900 dark:text-white"></h3>
-                      </div>
-                      <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400"><p>Revisado en España el <time datetime="2023-03-13 19:00">Marzo 3, 2023</time></p></footer>
-                      <p class="mt-4 mb-8   font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">Esta es mi primer compra. Son simplemente una fantástica relación calidad-precio. Es su atención al cliente el asesoramiento es fantástico, totalmente recomendado.</p>
-                      
-                      </div>
-                  </article>
-                  </div>
-                  <!-- Item 5 -->
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <article class="bg-white  mt-20 justify-center border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700 ">
-                      <div class="m-4 ">
-                        <div class="flex items-center mb-4 space-x-4">
-                          <img class="w-10 h-10 rounded-full" src="#" alt="">
-                          <div class="space-y-1 font-medium dark:text-white">
-                              <p>Maria Camila </p>
-                          </div>
-                      </div>
-                      <div class="flex items-center mb-1">
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <svg aria-hidden="true" class="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                          <h3 class="ml-2 text-sm font-semibold text-gray-900 dark:text-white"></h3>
-                      </div>
-                      <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400"><p>Revisado en España el <time datetime="2023-03-13 19:00">Marzo 3, 2023</time></p></footer>
-                      <p class="mt-4 mb-8   font-normal  text-left  text-1xl leading-6 text-gray-800 dark:text-gray-400">Esta es mi primer compra. Son simplemente una fantástica relación calidad-precio. Es su atención al cliente el asesoramiento es fantástico, totalmente recomendado.</p>
-                      
-                      </div>
-                  </article>
-                  </div>
-              </div>
-              <!-- Slider indicators -->
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-              </div>
-              <!-- Slider controls -->
-              <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-            </div>
-            </div>
-          
-          <div class=" lg:mb-96  lg:h-40 sticky top-0">
-          <div class="flex justify-around">
-            <div class="lg:mt-8 lg:mr-4 mt-8 fixed justify-start relative  grid grid-cols-1 ">
-              
-              <div class=" bg-white border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700">
-                <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-                    <li class="mr-2">
-                        <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class=" inline-block p-4 text-teal-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 "><span class="text-gray-400 hover:text-teal-600">Estándar</span></button>
-                    </li>
-                    <li class="mr-2">
-                        <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="true" class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300"><span class="text-teal-600 hover:text-gray-400">Avanzado</span></button>
-                    </li>
-                    <li class="mr-2">
-                        <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab" aria-controls="statistics" aria-selected="false" class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300"><span class="text-gray-400 hover:text-teal-600">Profesional</span></button>
+                    <li>
+                        <a href="precios.html" class="block py-2 pl-3 pr-4 text-gray-700  hover:text-teal-50 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-teal-50 dark:hover:bg-gray-700 dark:hover:text-teal-50 md:dark:hover:bg-transparent dark:border-gray-700">Precios</a>
                     </li>
                 </ul>
-                <div id="defaultTabContent">
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
-                      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Plan Web <span class="text-teal-400">Estándar</span></h5>
-                      <div class="flex items-baseline text-gray-900 dark:text-white">
-                          <span class="text-3xl font-semibold">€</span>
-                          <span class="text-5xl font-extrabold tracking-tight">299</span>
-                          <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"></span>
-                      </div>
-                      <!-- List -->
-                      <ul role="list" class="space-y-5 my-7">
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Incluye 1 página.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Diseños únicos y orientados a la venta.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Optimización SEO basic.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Optimización para móviles (Responsive Desing)
-                    
-                          </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">  Optimización de velocidad de carga.
-                            
-                    
-                          </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">   Incluye Políticas legales y Cookies.
-                    
-                            
-                    
-                          </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">   Incluye hosting y dominio.
-                          </span>
-                        </li>
-                        <li class="flex space-x-3 line-through decoration-gray-500">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500"> Email Corporativo.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3 line-through decoration-gray-500">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500"> Incluye creación de blog.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3 line-through decoration-gray-500">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500"> Diseño de marca.
-                            </span>
-                        </li>
-                    </ul>
-                      <button type="button" class="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"><a href="Contáctenos.html" > Contratar Ahora </a></button>
-                      <li class="mt-4 flex justify-center space-x-3 line-through decoration-gray-500">
-                        <!-- Icon -->
-                        <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="text-base font-normal leading-tight text-gray-500"> IVA no incluido.
-                        </span>
-                    </li>
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services" role="tabpanel" aria-labelledby="services-tab">
-                      
-                      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Plan Web <span class="text-teal-400">Avanzado</span> </h5>
-                      <div class="flex items-baseline text-gray-900 dark:text-white">
-                          <span class="text-3xl font-semibold">€</span>
-                          <span class="text-5xl font-extrabold tracking-tight">499</span>
-                          <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"></span>
-                      </div>
-                      <!-- List -->
-                      <ul role="list" class="space-y-5 my-7 ">
-                          <li class="flex space-x-3">
-                              <!-- Icon -->
-                              <svg aria-hidden="true" class=" flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                              <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400"> TODO LO ANTERIOR Y ADEMÁS
-                              </span>
-                          </li>
-                          <li class="flex space-x-3 ">
-                              <!-- Icon -->
-                              <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                              <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400"> +8 Subpaginas (Quienes somos, Servicios.)
-                              </span>
-                          </li>
-                          <li class="flex space-x-3">
-                              <!-- Icon -->
-                              <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                              <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">  Integración Redes Sociales.
-                              </span>
-                          </li>
-                          <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400"> Botón Flotante llamada, Whatsapp, etc
-                      
-                            </span>
-                          </li>
-                          <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">   Diseño de marca
-                            </span>
-                          </li>
-                          <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">   Incluye hosting y dominio.
-                            </span>
-                          </li>
-                          <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal text-1xl leading-6 text-gray-800 dark:text-gray-400">    Email Corporativo
-            
-                            </span>
-                          </li>
-                          <li class="flex space-x-3 line-through decoration-gray-500">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500"> Incluye creación de blog.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3 line-through decoration-gray-500">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500"> Alta Google Analitycs.
-                            </span>
-                        </li>
-                          
-                      </ul>
-                      <button  type="button" class="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"> <a href="Contáctenos.html" > Contratar Ahora </a> </button>
-                      <li class="mt-4 flex justify-center space-x-3 line-through decoration-gray-500">
-                        <!-- Icon -->
-                        <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="text-base font-normal leading-tight text-gray-500"> IVA no incluido.
-                        </span>
-                      </li>      
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
-                      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Plan Web <span class="text-teal-400">Profesional</span></h5>
-                      <div class="flex items-baseline text-gray-900 dark:text-white">
-                          <span class="text-3xl font-semibold">€</span>
-                          <span class="text-5xl font-extrabold tracking-tight">599
-                          </span>
-                          <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"></span>
-                      </div>
-                      <!-- List -->
-                      <ul role="list" class="space-y-5 my-7">
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> TODO LO ANTERIOR Y ADEMÁS
-                          </span>
-                        </li>
-                        <li class="flex space-x-3"
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Más Secciones.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3">
-                            <!-- Icon -->
-                            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Incluye creación de blog.
-                            </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">  Super Experiencia de Usuario.
-                    
-                          </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">  Integración Tag Manager.
-                            
-                    
-                          </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">   Alta Google Analitycs.
-                    
-                            
-                    
-                          </span>
-                        </li>
-                        <li class="flex space-x-3">
-                          <!-- Icon -->
-                          <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">   Integración google Search Console.
-                          </span>
-                        </li>
-                    </ul>
-                      <button type="button" class="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"><a href="Contáctenos.html">Contratar Ahora</a></button>
-                      <li class="mt-4 flex justify-center space-x-3 line-through decoration-gray-500">
-                        <!-- Icon -->
-                        <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="text-base font-normal leading-tight text-gray-500"> IVA no incluido.
-                        </span>
-                    </li>
-                    </div>
-                    
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Section CTA principal responsive dark mode -->
+  
+    <div class="relative -mt-[7.75rem] overflow-hidden pt-[3.75rem] pb-16 bg-white dark:bg-gray-800">
+      <img src="assets/png/Fluid-lightbg.png" alt="" class="absolute -top-[1rem] left-1/2 -ml-[40rem] w-[163.125rem] max-w-none sm:-ml-[67.5rem]">
+      <div class="items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-0 lg:px-0">
+        <div class="relative mx-auto mt-16 grid w-full max-w-container grid-cols-1 px-4 sm:mt-20 sm:px-6 lg:px-8 xl:mt-32">
+          <div class="col-start-1 row-start-1 h-7 text-base font-semibold leading-7 text-teal-700" aria-hidden="true">
+            Servicios 100% Online
+          </div>
+              <p class="mt-4 lg:text-6xl text-4xl  font-extrabold tracking-tight  text-slate-900 dark:text-white sm:text-6xl sm:leading-[3.5rem]">
+                  PLAN WEB    <br>
+                <span class="text-4xl lg:text-6xl text-teal-300">AVANZADO</span>
+              </p>
+              <div class="flex flex-wrap mt-4">
+                <div class="flex items-center text-sm font-medium text-slate-500">
+                
+                  <svg class="h-8 w-8 flex-none stroke-current text-slate-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"></path>
+                  </svg>  
+                  <span class="ml-2.5">Hosting</span>
+                </div>
+                <div class="flex items-center text-sm font-medium text-slate-500 ml-6">
+                  <svg class="h-8 w-8 flex-none stroke-current text-slate-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"></path>
+                  </svg>
+                  <span class="ml-2.5">Optimización</span>
+                </div>
+                <div class="flex items-center text-sm font-medium text-slate-500 lg:ml-6">
+                  <svg class="h-8 w-8 flex-none stroke-current text-slate-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 4.5v15a2.25 2.25 0 002.25 2.25z"></path>
+                  </svg>
+                  <span class="ml-2.5">Responsive</span>
+                </div>
+                <div class="flex items-center text-sm font-medium text-slate-500 ml-6">
+                  <svg class="h-8 w-8 flex-none stroke-current text-slate-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path>
+                  </svg>
+                  <span class="ml-2.5">Seguridad</span>
                 </div>
               </div>
-    
-    
+              <p class="mt-4 mb-4 text-base leading-7  text-slate-500 dark:text-slate-400">
+                  Uno de los principales motivos por los que cualquier empresa debería trabajar su ámbito de actuación en el mundo online es, sin duda, debido a que Internet puede funcionar como un auténtico motor que impulse el negocio. <br>
+
+                  Los negocios digitales, además de brindar un medio excelente para conseguir aumentar las ventas, suponen también un acercamiento de la empresa al público, con su consiguiente mejora de la proyección corporativa y el aumento de la reputación. <br>
+                  
+                  Todo esto, se acaba convirtiendo en un mayor número de ventas, con clientes más fidelizados y con mejores ratios de beneficios.
+                  
+                  Posicionamiento online: cómo vender por Internet
+                <span class="text-teal-500">¡Que esperás comienza ahora mismo!</span>
+              </p>  
+              <div class="mb-4">
+                <p class="text-slate-500 dark:text-slate-500">Desde</p>
+                <P class="text-slate-500 text-1xl pr-4">
+                  <span class="text-4xl font-bold text-teal-500">
+                  499 <span class="text-slate-500">$</span>
+                  </span>
+                  <br>
+                  IVA excl.
+                </P>
+              </div> 
+        </div>
+        <!-- container img rounded -->
+       <div class=" lg:mt-20 lg:ml-40 mt-8  relative grid grid-cols-1 ">
+          <div class=" mb-8 max-w-sm p-4 bg-white border border-gray-200 rounded-sm shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+              <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Plan Web <span class="text-teal-400">Avanzado</span> </h5>
+              <p class="mb-5 font-normal text-gray-700 dark:text-gray-400">Creamos una web con hasta 5 páginas personalizadas para que proyectes una imagen corporativa espectacular.</p>
+              <div class="flex items-baseline text-gray-900 dark:text-white">
+                  <span class="text-3xl font-semibold">€</span>
+                  <span class="text-5xl font-extrabold tracking-tight">499</span>
+                  <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"></span>
               </div>
-          </div>
-          
-          </div>
+              <!-- List -->
+            
+              <ul role="list" class="space-y-5 my-7 ">
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg aria-hidden="true" class=" flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class=" text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> TODO LO ANTERIOR Y ADEMÁS
+                      </span>
+                  </li>
+                  <li class="flex space-x-3 ">
+                      <!-- Icon -->
+                      <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> +8 Subpaginas (Quienes somos, Servicios, Contacto...)
+                      </span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">  Integración Redes Sociales.
+                      </span>
+                  </li>
+                  <li class="flex space-x-3">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"> Botón Flotante llamada, Whatsapp, Telegram, Messenger...
+              
+                    </span>
+                  </li>
+                  <li class="flex space-x-3">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">   Diseño de marca
+                    </span>
+                  </li>
+                  <li class="flex space-x-3">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">   Incluye hosting y dominio.
+                    </span>
+                  </li>
+                  <li class="flex space-x-3">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">    Email Corporativo
+    
+                    </span>
+                  </li>
+                  <li class="flex space-x-3">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-teal-600 dark:text-teal-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">    Integración Redes Sociales
+    
+                    </span>
+                  </li>
+                  <li class="flex space-x-3 line-through decoration-gray-500">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500"> Incluye creación de blog.
+                    </span>
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                    <!-- Icon -->
+                    <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-normal leading-tight text-gray-500"> Alta Google Analitycs.
+                    </span>
+                </li>
+                  
+              </ul>
+              <button  type="button" class="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"> <a href="Contáctenos.html" > Contratar Ahora </a> </button>
+              <li class="mt-4 flex justify-center space-x-3 line-through decoration-gray-500">
+                <!-- Icon -->
+                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <span class="text-base font-normal leading-tight text-gray-500"> IVA no incluido.
+                </span>
+            </li>
+            </div>
       </div>
-          
+      </div>
     </div>
 
 
+
     <!-- Section footer index -->
-    <footer class=" sticky mt-16   p-4 bg-white sm:p-6 dark:bg-gray-900">
-      <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-            <!-- Logo Hiddal -->
-          <a href="https://studio.hiddal.es" class="flex  items-center">
-            <img src="src/assets/png/hiddal/v1.0.png" class="h-10 lg:h-20 mr-3 sm:h-7" alt="Hiddal Logo" /> 
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Hiddal</span>
-          </a>
-            
+    <footer class="py-12 bg-gray-50 xl:pt-24 dark:bg-gray-900">
+      <div class="w-full px-4 mx-auto max-w-8xl">
+          <div class="grid gap-12 xl:grid-cols-6 xl:gap-24">
+              <div class="col-span-2">
+                  <a href="https://studio.hiddal.es/" class="flex mb-5">
+                      <img src="assets/png/hiddal/v1.0.png" class="h-16 mr-3" alt="Flowbite Logo">
+                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hiddal</span>
+                  </a>
+                  <p class="max-w-lg mb-3 text-gray-600 dark:text-gray-400">Hiddal Studio un equipo multidisciplinario Diseño Web. <a href="">Diseño</a> <a href="" class="text-teal-600">Ui/UX,</a> <a href="">Servicios de</a> <a href="" class="text-teal-600">SEO, SEM</a>, con la finalidad de ofrecer un servicio competitivo con servicios económicos que brinden la oportunidad a pequeñas y medianas en presas o emprendedores de promocionar su marca personal.</p>
+                  <p class="max-w-lg text-gray-600 dark:text-gray-400">Alexanderhgdev <a href="https://github.com/alexanderhgdev" class="text-teal-600 dark:text-teal-500 hover:underline" rel="nofollow">GitHub</a>, <a href="https://twitter.com/alexanderhgdev" class="text-teal-600 hover:underline dark:text-teal-500" rel="nofollow">Twitter</a>.</p>
+              </div>
+              <div>
+                  <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">RECURSOS</h3>
+                  <ul>
+                      <li class="mb-4">
+                          <a href="" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Recursos</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">AYUDA Y APOYO</h3>
+                  <ul>
+                      <li class="mb-4">
+                          <a href="" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Contáctenos</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Sobre Nosotros</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">SÍGANOS</h3>
+                  <ul>
+                      <li class="mb-4">
+                          <a href="https://discord.gg/hiddal" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://github.com/alexanderhgdev" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://twitter.com/hiddal_es" rel="noreferrer nofollow" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
+                  <ul>
+                      <li class="mb-4">
+                          <a href="" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Política de privacidad</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Términos y condiciones</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Aviso Legal</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-300">Recursos</h2>
-                  <ul class="text-gray-900 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
-                      </li>
-                      <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-                      </li>
-                  
-                  </ul>
-                  
-              </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-300">Follow us</h2>
-                  <ul class="text-gray-800 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                      </li>
-                      <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                  <ul class="text-gray-800 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="#" class="hover:underline">Privacy Policy</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-800 sm:text-center dark:text-gray-400">© 2023 <a href="https://studio.hiddal.es/" class="hover:underline">HIDDAL</a>. Reservados todos los derechos.
+          <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12">
+          <span class="block text-center text-gray-600 dark:text-gray-400 font-">© 2022-<span id="currentYear">2023</span> <a href="https://studio.hiddal.es/">Hiddal™</a> es una marca registrada. Reservados todos los derechos.
           </span>
-          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-              <a href="https://www.facebook.com/hiddal.es" class="text-gray-800 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                  <span class="sr-only">Facebook page</span>
-              </a>
-              <a href="https://www.instagram.com/hiddal_es" class="text-gray-800 dark:text-gray-400  hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-                  <span class="sr-only">Instagram page</span>
-              </a>
-              <a href="https://twitter.com/hiddal_es" class="text-gray-800 dark:text-gray-400  hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                  <span class="sr-only">Twitter page</span>
-              </a>
-              <a href="https://github.com/alexanderhgdev" class="text-gray-800 dark:text-gray-400  hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-                  <span class="sr-only">GitHub account</span>
-              </a>
-              
-          </div>
       </div>
-    </footer>
+  </footer>
 
     <!-- Scripts Darkmode Flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
