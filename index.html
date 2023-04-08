@@ -37,6 +37,9 @@
     <title>Hiddal Studio - Diseño Web Todo Incluido - Desde 299€</title>
 </head>
 <body class="dark:bg-gray-900">
+    <!-- Section Cookies -->
+    
+
     <!-- Section Navbar responsive dark mode -->
     <nav class="relative bg-transparent z-50 w-full flex-none pt-4  px-2 md:px-4 py-2.5 dark:bg-gray-900">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
@@ -902,51 +905,44 @@
               </figure>
             </div>
             
-            <form id="form-contact-recaptcha">
+            <form  id="form" action="https://formspree.io/f/mzbqkzab" method="post" >
               <h1 class="text-gray-900 dark:text-white  text-2xl mb-8">
                 Comunicate con nosotros
               </h1>
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                   <div>
-                      <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
-                      <input type="text" id="first_name" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="Alexander" required>
+                      <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
+                      <input name="name" type="text" id="name" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="Alexander" required>
                   </div>
-                  <div>
-                      <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Compañía</label>
-                      <input type="text" id="company" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="Hiddal" required>
-                  </div>  
                   <div>
                       <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Número de teléfono</label>
-                      <input type="tel" id="phone" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="+34" pattern="{611}-[797]-{110}" required>
-                  </div>
-                  <div>
-                      <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sitio Web URL</label>
-                      <input type="url" id="website" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="hiddal.es">
+                      <input name="phone" type="tel" id="phone" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="+34"  required>
                   </div>
               </div>
               <div class="mb-6">
                   <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo Electrónico</label>
-                  <input type="email" id="email" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white"placeholder="info@hiddal.es" required>
+                  <input name="email" type="email" id="email" class="w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white"placeholder="info@hiddal.es" required>
               </div> 
                
                   <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mensaje</label>
-                  <textarea id="message" rows="4" class="block w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="Explicanos a fondo tu problema"></textarea>
+                  <textarea name="message" id="message" rows="4" class="block w-full p-2.5 rounded-sm text-sm bg-white text-gray-800 dark:text-gray-400 dark:bg-gray-800 border-gray-700 focus:ring-teal-400 focus:border-teal-400 dark:placeholder-white" placeholder="Explicanos a fondo tu problema"></textarea>
   
               <div class="flex items-start mb-6 mt-4">
                   <div class="flex items-center h-5">
                   <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-teal-500 rounded-sm bg-white focus:bg-teal-500 focus:ring-1 focus:ring-teal-500 dark:bg-gray-800 hover:dark:bg-teal-400 dark:border-teal-400 dark:focus:ring-teal-400 hover:dark:bg-teal-400 dark:ring-teal-400  dark:ring-offset-teal-400" required>
                   </div>
-                  <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Estoy de acuerdo con los <a href="#" class="text-teal-500  hover:underline dark:text-teal-400">términos y condiciones.</a>.</label>
+                  <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Estoy de acuerdo con los <a href="Términos y condiciones.html" class="text-teal-500  hover:underline dark:text-teal-400">términos y condiciones.</a>.</label>
                 </div>
-                
-                
-              <button type="submit" class="g-recaptcha text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-teal-400 dark:hover:bg-teal-600 dark:focus:ring-teal-800"
-              data-sitekey="6LeJ5P4kAAAAAIPO8pOMuAn3KY78AsBkpMpO8llu" 
-              data-callback='onSubmit' 
-              data-action='submit'>
-              Enviar
-            </button>
+                 
+                <div class="">
+                  <form action="?" method="POST">
+                    <div class="g-recaptcha" data-sitekey="6LcDzW0lAAAAANgWy8h2ozSmpR-LKFn7hb-9XS49"></div>
+                    <br/>
+                    <input class="re-captcha text-white bg-teal-500 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-teal-400 dark:hover:bg-teal-600 dark:focus:ring-teal-800" type="submit" value="Enviar">
+                  </form>
+                </div>
             </form>
+
                     
             
   
@@ -1150,6 +1146,31 @@
         </div>
     </footer>
 
+    <!-- Script Contacto -->
+    <script>
+      const $form = document.querySelector('#form')
+
+      $form.addEventListener('submit', handleSubmit)
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+          method: this.method,
+          body: form,
+          headers: {
+            'Accept': 'aplication/json'
+          }
+        })
+      if (response.ok) {
+        this.reset()
+        alert('Gracias por contactarme, te escribire pronto :D')
+      }
+      }
+
+    </script>
+   
+
     <!-- Scripts Darkmode Flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <!-- Script Darkmode -->
@@ -1195,12 +1216,7 @@
          
      });
     </script>
-    <!-- Script Rcpatcha  -->
-    <script>
-       function onSubmit(token) {
-         document.getElementById("form-contact-recaptcha").submit();
-       }
-    </script>
+
    <!-- Scripts Sections FQA -->
    <script src="main.jsx" >
    </script>
